@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta Pokémon</h1>
+        <label for="pokemon">Digite o nome ou o ID do Pokémon</label>
+        <input type="text" id="pokemon" placeholder="Ex: Bulbasaur ou 1">
+        <button onclick="consultarPokemon()">Consultar</button>
+    </div>
+
+    <div id="resultado" class="resultado">
+        <img id="pokemon-image" alt="Imagem do Pokémon">
+        <p><strong>Nome: </strong> <span id="nome"></span></p>
+        <p><strong>Tipo(s): </strong> <span id="tipos"></span></p>
+        <p><strong>Altura: </strong> <span id="altura"></span></p>
+        <p><strong>Peso: </strong> <span id="peso"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
